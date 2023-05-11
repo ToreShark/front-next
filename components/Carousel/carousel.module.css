@@ -1,0 +1,191 @@
+.container {
+  width: 80rem;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.carouselItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselItem img {
+  width: 100%;
+}
+
+.carouselItemContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carouselItemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carouselItemTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carouselItemDescription {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1116px) {
+  .container {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItemContent {
+    padding: 0.5rem;
+  }
+
+  .carouselItemTitle {
+    font-size: 1rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .container {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItemContent {
+    padding: 0.5rem;
+  }
+
+  .carouselItemTitle {
+    font-size: 1rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 896px) {
+  .container {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItemContent {
+    padding: 0.5rem;
+  }
+
+  .carouselItemTitle {
+    font-size: 1rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselItemContent {
+    padding: 0.5rem;
+  }
+
+  .carouselItemTitle {
+    font-size: 1rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.8rem;
+  }
+}
+
+/* @media (max-width: 1016px) {
+  .carouselItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carouselItemTitle {
+    font-size: 1.2rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.9rem;
+  }
+} */
+
+/* @media (max-width: 915px) {
+  .carouselItem img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carouselItemTitle {
+    font-size: 1.1rem;
+  }
+
+  .carouselItemDescription {
+    font-size: 0.8rem;
+  }
+} */

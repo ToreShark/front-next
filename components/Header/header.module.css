@@ -1,0 +1,87 @@
+.logo{
+    font-size: 50px;
+}
+.hamburger{
+    display: none;
+}
+.navbarsoft ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.navbarsoft ul li .link{
+    color: #fefefe;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.navbarsoft ul li .link:hover{
+    background-color: #fefefe;
+    color: #000;
+    text-decoration: none;
+}
+.loginButton {
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+  
+.loginButton:hover {
+    background-color: #3a77bf;
+}
+
+@media only screen and (max-width: 1016px) {
+    .navbarsoft ul li .link {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 915px) {
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+      }
+    .navbarsoft {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 450px;
+        background-color: var(--black);
+        transition: 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s;
+        z-index: 1;
+    }
+    .navbarsoft.open {
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbarsoft ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .navbarsoft ul li {
+        margin: 12px;
+    }
+}
+  

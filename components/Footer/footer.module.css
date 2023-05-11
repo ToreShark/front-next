@@ -1,0 +1,39 @@
+.row {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.col {
+  flex-basis: 25%;
+}
+.col h3 {
+  width: fit-content;
+  position: relative;
+}
+.emailid {
+  width: fit-content;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 2rem 0;
+}
+.listItem {
+  list-style: none;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.ulbox {
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

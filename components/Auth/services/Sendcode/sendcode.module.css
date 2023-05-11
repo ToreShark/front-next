@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: rgb(94, 144, 188);
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.timer {
+  margin-bottom: 1rem;
+}
+
+.otpInput {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  @media (max-width: 600px) {
+    justify-content: space-between;
+  }
+}
+
+.otpInput input {
+  width: 4.5rem;
+  height: 4.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border-radius: 1rem;
+  border: 0.1rem solid #d9d9d9;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+  inputmode: numeric;
+  pattern: "[0-9]*";
+
+  @media (max-width: 600px) {
+    width: 2rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.otpInput input:last-child {
+  margin-right: 0;
+}
+
+.otpInput input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0.5rem rgba(76, 175, 80, 0.4);
+}
+
+.otpInput input::-webkit-inner-spin-button,
+.otpInput input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: #3f9a48;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  padding: 2rem;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
